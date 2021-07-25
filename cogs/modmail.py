@@ -1025,12 +1025,12 @@ class Modmail(commands.Cog):
 
             if not silent and not self.bot.config.get("thread_contact_silently"):
                 if ctx.author.id == user.id:
-                    description = "You have opened a Modmail thread."
+                    description = "Você abriu uma thread."
                 else:
                     description = f"{ctx.author.name} has opened a Modmail thread."
 
                 em = discord.Embed(
-                    title="New Thread",
+                    title="Nova thread",
                     description=description,
                     color=self.bot.main_color,
                 )
