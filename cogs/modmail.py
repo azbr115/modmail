@@ -1006,7 +1006,7 @@ class Modmail(commands.Cog):
         if exists:
             embed = discord.Embed(
                 color=self.bot.error_color,
-                description="A thread for this user already " f"exists in {exists.channel.mention}.",
+                description="Uma thread para este utilizador já" f"existe em {exists.channel.mention}.",
             )
             await ctx.channel.send(embed=embed, delete_after=3)
 
